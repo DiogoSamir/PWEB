@@ -1,0 +1,50 @@
+body {
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{ 
+    width: 400px;
+    height: 200px;
+}
+
+@media only screen and (max-width: 420px) {
+    .container {
+        background: black;
+    }
+}
+
+@media only screen and (min-width: 420px) and (max-width: 768px) {
+    .container {
+        background: orange;
+    }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+    .container {
+        background: brown;
+    }
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1080px) {
+    .container {
+        background: pink;
+    }
+}
+
+@media only screen and (min-width: 1080px) and (max-width: 1366px) {
+    .container {
+        background: brown;
+    }
+}
+
+
+@media only screen and (min-width: 1366px) and (max-width: 1920px) {
+    .container {
+        background: blue;
+    }
+}
