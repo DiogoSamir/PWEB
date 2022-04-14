@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade7</title>
+
+<body>
+    <script>
+        var humano = parseInt(prompt("1-Pedra, 2-Papel, 3-Tesoura"));
+
+        var computador = parseInt(Math.random() * (30 - 0) + 0);
+
+        if (computador < 10) {
+            computador = 1;
+        }
+        else if (computador >= 10 && computador < 20) {
+            computador = 2;
+        }
+        else {
+            computador = 3;
+        }
+
+        if (humano == 1 && computador == 3 || humano == 2 && computador == 1 || humano == 3 && computador == 2) {
+            switch (humano){
+                case humano=1:
+                    humano="Pedra"
+                    break;
+                case humano=2:
+                    humano="Papel"
+                    break;
+                case humano=3:
+                    humano="Tesoura"
+                    break;
+            }
+
+            switch (computador){
+                case computador=1:
+                computador="Pedra"
+                    break;
+                case computador=2:
+                computador="Papel"
+                    break;
+                case computador=3:
+                computador="Tesoura"
+                    break;
+            }
+            alert("Você ganhou!\n"+
+            "Você: "+humano+"\n"+
+            "Computador: "+computador);
+        }
+
+
+        else if (humano == 1 && computador == 2 || humano == 2 && computador == 3 || humano == 3 && computador == 1) {
+            switch (humano){
+                case humano=1:
+                    humano="Pedra"
+                    break;
+                case humano=2:
+                    humano="Papel"
+                    break;
+                case humano=3:
+                    humano="Tesoura"
+                    break;
+            }
+
+            switch (computador){
+                case computador=1:
+                computador="Pedra"
+                    break;
+                case computador=2:
+                computador="Papel"
+                    break;
+                case computador=3:
+                computador="Tesoura"
+                    break;
+            }
+
+            alert("Você perdeu!\n"+
+            "Você: "+humano+"\n"+
+            "Computador: "+computador);
+        }
+
+        else {
+            switch (humano){
+                case humano=1:
+                    humano="Pedra"
+                    break;
+                case humano=2:
+                    humano="Papel"
+                    break;
+                case humano=3:
+                    humano="Tesoura"
+                    break;
+            }
+
+            switch (computador){
+                case computador=1:
+                computador="Pedra"
+                    break;
+                case computador=2:
+                computador="Papel"
+                    break;
+                case computador=3:
+                computador="Tesoura"
+                    break;
+            }
+
+            alert("Empate\n"+
+            "Você: "+humano+"\n"+
+            "Computador: "+computador);
+
+        }
+
+</script>
+</body>
+</head>
+    
+</html>
