@@ -1,0 +1,57 @@
+25<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Atividade8</title>
+
+<body>
+    <script>
+        var i = parseInt("0");
+        var idadeTotal = parseInt("0");
+        var maisVelha = 0;
+        var idade = parseInt("0");
+        var maisNova = 0;
+        var pessimo = parseInt("0");
+        var bomOtimo = parseInt("0");
+
+        for (i = 0; i < 4; i++) {
+            var idade = parseInt(prompt("Idade: "));
+            var sexo = parseInt(prompt("Qual seu sexo?\n1 - Masculino\n2 - Feminino"));
+            var opiniao = parseInt(prompt("Qual sua opinião:\n1 - Péssimo\n2 - Ruim\n3 - Bom\n4 - Ótimo"));
+
+            idadeTotal = idadeTotal + idade;
+
+            if (opiniao == 4 || opiniao == 3) {
+                bomOtimo = bomOtimo + 1;
+            }
+
+            if (opiniao == 1) {
+                var pessimo = pessimo + 1;
+            }
+
+            if (i == 0) {
+                maisVelha = idade;
+                maisNova = idade;
+            }
+            else if (idade > maisVelha) {
+                maisVelha = idade;
+            }
+            else if (idade < maisNova && idade != 0) {
+                maisNova = idade;
+            }
+        }
+
+        var porcBomOtimo = (bomOtimo / i) * 100;
+        var media = idadeTotal / i;
+        var qntd = i;
+
+        alert("Média de idade das pessoas: " + media + "\n" + "Pessoa mais velha: " + maisVelha +
+            "\n" + "Pessoa mais nova: " + maisNova + "\n" + "Quantidade de pessoas que responderam péssimo: " + pessimo +
+            "\n" + "Porcentagem de pessoas que responderam bom ou ótimo: " + porcBomOtimo + "%" + "\n" + "Total de pessoas que responderam: " + qntd);
+
+    </script>
+</body>
+</head>
+
+</html>
