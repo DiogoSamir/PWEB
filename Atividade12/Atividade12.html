@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Atividade 12</title>
+</head>
+<body>
+    <div id="container">
+        <div>
+            <img onmouseover="onMouseOver()" onmouseout="onMouseOut()" onclick="onClick()" src="./Img/janela-fechada.png" alt="">
+        </div>
+    </div>
+
+    <script>
+        const onClick = () => {
+            document.querySelector('img').src = "./Img/janela-quebrada.png"
+        }
+
+        const onMouseOut = () => {
+            document.querySelector('img').src = "./Img/janela-fechada.png"
+        }
+
+        const onMouseOver = () => {
+            document.querySelector('img').src = "./Img/janela-aberta.png"
+        }
+    </script>
+</body>
+</html>
