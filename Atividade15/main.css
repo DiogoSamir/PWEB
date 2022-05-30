@@ -1,0 +1,21 @@
+.container{
+    background: grey;
+    border: #ddd solid 1px;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    width: 30vw;
+    border-radius: 20px;
+    box-shadow: 1px 6px 20px 0px rgba(0, 0, 0, 0.3);
+}
+
+.container > form {
+    display: flex; 
+    gap: 20px;
+    flex-direction: column;
+    padding: 40px;
+}
+
+.container > h1{
+    text-align: center;
+}
