@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> Professores Fatec Sorocaba</title>
+</head>
+
+<body>
+    <h1>Está é a lista do corpo docente da Fatec Sorocaba</h1>
+    <table>
+        <td>
+            Nome
+        </td>
+        <td>
+            email
+        </td>
+        <%for(var i = 0; i < profs.length; i++){%>
+            <tr>
+                <td>
+                    <%=profs[i].NOME_PROFESSOR%>
+                </td>
+                <td>
+                    <%=profs[i].EMAIL_PROFESSOR%>
+                </td>
+            </tr>
+            <%}%>
+    </table>
+</body>
+
+</html>
